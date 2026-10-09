@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: BTC
+    database: BITCOIN_DB
+    schema: BITCOIN_SCHEMA
+
+    tables:
+      - name: date_table
+        config:
+          loaded_at_field: TIMESTP
+          freshness:
+            warn_after:
+              count: 10
+              period: minute
+            error_after:
+              count: 15
+              period: minute

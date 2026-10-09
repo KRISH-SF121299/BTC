@@ -1,0 +1,1 @@
+SELECT * FROM  {{ source('btc', 'btc_usd_max') }}
