@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: btc_whale_alert
+    config:
+      contract:
+        enforced: true
+
+    columns:
+      - name: volume
+        data_type: float
+        data_tests:
+          - column_valuetest

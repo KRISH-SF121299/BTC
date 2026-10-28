@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: BTC
-    database: BITCOIN_DB
-    schema: BITCOIN_SCHEMA
+    database: demo_db
+    schema: demo_schema
 
     tables:
       - name: date_table

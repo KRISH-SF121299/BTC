@@ -3,7 +3,8 @@ version: 2
 # Try using these source definitions instead!
 sources:
   - name: btc
-    schema: "BITCOIN_SCHEMA"
+    database: "demo_db"
+    schema: "demo_schema"
     description: E-commerce data for the Jaffle Shop
     tables:
       
