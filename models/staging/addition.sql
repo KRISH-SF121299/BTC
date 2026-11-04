@@ -1,1 +1,1 @@
-select 1 as numb;
+select 1 as numb
