@@ -1,10 +1,8 @@
 name: dbt CI
-
 on:
   pull_request:
     branches:
       - master
-
 jobs:
   dbt-run:
     runs-on: ubuntu-latest
