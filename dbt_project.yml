@@ -8,10 +8,13 @@ profile: jaffle_shop
 
 model-paths: ["models"]
 
+test-paths:
+  - tests
+
 models:
   jaffle_shop:
     staging:
       +materialized: table
+      
 
-    marts:
-      +materialized: table
+
