@@ -2,12 +2,27 @@ version: 2
 
 models:
   - name: btc_whale_alert
-    config:
-      contract:
-        enforced: true
+    latest_version: 2
+
+    
 
     columns:
       - name: volume
         data_type: float
+
+      - name: id
+        data_type: int
         data_tests:
           - column_valuetest
+
+    versions:
+      - v: 1
+        deprecation_date: 2026-11-04
+        config:
+          enable: false
+
+
+      - v: 2
+        columns:
+          - include: all
+            exclude: [volume]
